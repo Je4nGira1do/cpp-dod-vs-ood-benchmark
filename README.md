@@ -23,10 +23,6 @@ Here are the actual numbers measured on this machine (compiled in Release Mode `
 * **The linear DOD approach is 779% faster** (almost **9x faster**) than the traditional OOD approach with scattered heap objects!
 * Even with perfect contiguous memory, if you read it out of order (**Random Access**), your speed plummets by **779%**. This proves that **how you read your memory is just as important as how you lay it out!**
 
-Here is what the real execution looks like in the terminal:
-
-![Benchmark Output Screenshot](benchmark_results.png)
-
 ---
 
 ## An Intuitive Look at CPU Caches (How it Works)
