@@ -5,12 +5,11 @@
 #include <random>
 #include <algorithm>
 #include <iomanip>
-
 class EntityClass {
 public:
     float x, y, z, w;
 
-    __declspec(noinline) float compute() const {
+    float compute() const {
         return x * 1.5f + y * 2.5f + z * 3.5f + w * 4.5f;
     }
 };
@@ -18,7 +17,7 @@ public:
 struct EntityStruct {
     float x, y, z, w;
 
-    __declspec(noinline) float compute() const {
+    float compute() const {
         return x * 1.5f + y * 2.5f + z * 3.5f + w * 4.5f;
     }
 };
